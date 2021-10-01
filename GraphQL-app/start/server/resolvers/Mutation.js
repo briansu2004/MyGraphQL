@@ -4,7 +4,7 @@ const { v4 } = require("uuid");
 const Mutation = {
   addAnimal: (
     parent,
-    { image, title, rating, price, description, stock, onSale, category },
+    { image, title, rating, price, description, stock, onSale, category, slug },
     { animals }
   ) => {
     let newAnimal = {
@@ -17,6 +17,7 @@ const Mutation = {
       stock,
       onSale,
       category,
+      slug,
     };
     animals.push(newAnimal);
     return newAnimal;
@@ -47,6 +48,7 @@ const Mutation = {
   //       stock,
   //       onSale,
   //       category,
+  //       slug,
   //     };
   //     animals.push(newAnimal);
   //     return newAnimal;
@@ -55,13 +57,38 @@ const Mutation = {
 
 module.exports = { Mutation };
 
-// type Animal {
-//     image: String!
-//     title: String!
-//     rating: Float
-//     price: String!
-//     description: [String!]!
-//     stock: Int!
-//     onSale: Boolean
-//     category: Category
+// mutation(
+//   $addAnimalImage: String!
+//   $addAnimalTitle: String!
+//   $addAnimalPrice: String!
+//   $addAnimalDescription: [String!]!
+//   $addAnimalStock: Int!
+//   $addAnimalCategory: String!
+//   $addAnimalRating: Float
+//   $addAnimalSlug: String
+// ) {
+//   addAnimal(
+//     image: $addAnimalImage
+//     title: $addAnimalTitle
+//     price: $addAnimalPrice
+//     description: $addAnimalDescription
+//     stock: $addAnimalStock
+//     category: $addAnimalCategory
+//     rating: $addAnimalRating
+//     slug: $addAnimalSlug
+//   ) {
+//     id
+//     image
 //   }
+// }
+
+// {
+//   "addAnimalImage": "ostrich",
+//   "addAnimalTitle": "This is a really cool ostrich",
+//   "addAnimalPrice": "9768.99",
+//   "addAnimalDescription": "Nice",
+//   "addAnimalStock": 100,
+//   "addAnimalCategory": "1",
+//   "addAnimalRating": 4.3,
+//   "addAnimalSlug": "mammals"
+// }

@@ -38,6 +38,7 @@ const typeDefs = gql`
     stock: Int!
     onSale: Boolean
     category: Category
+    slug: String
   }
 
   type Mutation {
@@ -50,6 +51,7 @@ const typeDefs = gql`
       stock: Int!
       onSale: Boolean
       category: String
+      slug: String
     ): Animal
     removeAnimal(id: ID!): Boolean
     # updateAnimal(
@@ -62,6 +64,7 @@ const typeDefs = gql`
     #   stock: Int
     #   onSale: Boolean
     #   category: String
+    #   slug: String
     # ): Animal
   }
 `;
