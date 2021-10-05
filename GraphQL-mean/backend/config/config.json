@@ -1,0 +1,6 @@
+{
+  "user": "brian",
+  "password": "password",
+  "dbname": "crud",
+  "mongoURI": "mongodb://localhost/crud"
+}
