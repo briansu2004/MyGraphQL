@@ -13,16 +13,15 @@ Combining local and remote schemas together into one API.
 
 ```shell
 cd combining-local-and-remote-schemas
-
-yarn install
-yarn start
+npm i
+npm run start
 ```
 
 or
 
-```
-npm i
-npm run start
+```shell
+yarn install
+yarn start
 ```
 
 ## Services
@@ -125,3 +124,19 @@ You'll recieve a meaningful `NOT_FOUND` error rather than an uncontextualized nu
 [combining schemas documentation](https://www.graphql-tools.com/docs/stitch-combining-schemas)
 
 ## Screenshot
+
+### _Products subservice_: http://localhost:4001/graphql
+
+![4001_1.png](images/4001_1.png)
+
+![4002_1.png](images/4001_2.png)
+
+### _Storefronts subservice_: http://localhost:4002/graphql
+
+![4002_1.png](images/4002_1.png)
+
+![4002_2.png](images/4002_2.png)
+
+### **Stitched gateway:** http://localhost:4000/graphql
+
+![4000.png](images/4000.png)
