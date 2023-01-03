@@ -4,12 +4,9 @@
 
 ### Project 1
 
-Worked oa GraphQL single page web app POC (upgraded from RESTful APIs)
+Worked on a GraphQL SPA project for a Telecommunication client
 
 - Used MongoDB as the NoSQL database and Mongoose as the object modeling tool.
-
-Im- plemented schema, queries, mutations and resolvers with Node.js othe server side and tested with GraphQL playground / Studio
-
-- Utilized Angular othe client side with Apollo client GraphQL library.
-
-- Hosted web app with NGINX and Apollo GraphQL Server.
+- Implemented schema, queries, mutations and resolvers with Node.js on the backend and tested with GraphQL Studio.
+- Utilized Angular on the front end with Apollo client GraphQL library.
+- Deployed the web app to OpenShift cluster with Jenkins pipeline.
